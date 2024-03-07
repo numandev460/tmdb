@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { Text, View, Button } from 'react-native';
+import React from 'react';
+import {  View } from 'react-native';
+import { CustomButton } from '../button';
 
 export const Header = ({ onTrendingClick, onPopularClick }:any) => {
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 20, marginTop: 20 }}>
-      <Button title="Trending" onPress={onTrendingClick} />
-      <Button title="Popular" onPress={onPopularClick} />
+      <CustomButton title='Trending' onPress={onTrendingClick}/>
+      <CustomButton title='Popular' onPress={onPopularClick}/>
     </View>
   );
 };
