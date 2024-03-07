@@ -10,15 +10,15 @@ import {
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
 import getMoviesDetail from '../../api/getMoviesDetail';
-import KGFImage from '../../assets/images/kgf.jpeg';
-import producation from '../../assets/images/producation.jpeg';
+
 import {styles} from './style';
 import Button from '../../components/button';
 import {url} from 'inspector';
-const MovieDetail = () => {
+const MovieDetail = ({route}: any) => {
   const [data, setData] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(false);
-  const id = '1096197';
+  const {id} = route.params;
+
   useEffect(() => {
     fetchMoviesDetail();
   }, []);

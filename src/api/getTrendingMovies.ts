@@ -1,8 +1,8 @@
 import {request} from '../lib/request';
-const getTrendingMovies = async () => {
+const getTrendingMovies = async (page:number) => {
   try {
     const response = await request({
-      url: 'popular?language=en-US&page=1',
+      url: `popular?language=en-US&page=${page}`,
       method: 'GET',
       params: {key: 'd88208968012f07cfa7884835280574e'},
       convertKeys: true,

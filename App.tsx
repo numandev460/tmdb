@@ -6,9 +6,8 @@ import MovieDetail from './src/screens/movieDetail';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      {/* <StackNavigation/> */}
-      <MovieDetail />
+    <SafeAreaView style={{flex: 1}}>
+      <StackNavigation />
     </SafeAreaView>
   );
 };
