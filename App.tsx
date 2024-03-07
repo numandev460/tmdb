@@ -1,11 +1,15 @@
-import {View, Text} from 'react-native';
+import { SafeAreaView, View} from 'react-native';
 import React from 'react';
+import { StackNavigation } from './src/navigation/stackNavigation';
+import MovieList from './src/screens/movieList';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <SafeAreaView>
+   
+      {/* <StackNavigation/> */}
+      <MovieList/>
+    </SafeAreaView>
   );
 };
 
